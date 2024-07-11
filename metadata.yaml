@@ -1,0 +1,23 @@
+type: groupby
+scope_name: otelcol/groupby
+
+status:
+  class: processor
+  stability:
+    development: [logs]
+  distributions: []
+  warnings: []
+  codeowners:
+    active: [codeboten]
+tests:
+  config:
+
+telemetry:
+  metrics:
+    processor_groupby_num_reduced_logs:
+      enabled: true
+      description: Number of logs that have been reduced
+      unit: "{records}"
+      sum:
+        value_type: int
+        monotonic: true
