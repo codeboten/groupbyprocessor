@@ -7,7 +7,6 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden v0.104.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest v0.104.0
 	github.com/stretchr/testify v1.9.0
-	github.com/tj/assert v0.0.3
 	go.opentelemetry.io/collector/component v0.104.0
 	go.opentelemetry.io/collector/config/configtelemetry v0.104.0
 	go.opentelemetry.io/collector/confmap v0.104.0

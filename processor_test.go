@@ -7,8 +7,8 @@ import (
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
+	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tj/assert"
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/processor/processortest"
 )
@@ -34,5 +34,4 @@ func TestProcessLogsDeduplicate(t *testing.T) {
 	require.Len(t, actual, 1)
 
 	assert.NoError(t, plogtest.CompareLogs(expected, actual[0]))
-
 }
